@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 a{
     text-decoration: none;
     color: white;;
@@ -15,7 +23,8 @@ a{
 .left-section{
     background-color: black;
     color: white;
-    grid-column: 1/ span 1;
+    grid-column: span 1;
+    min-height: 1000px;
 }
 
 .left-content{
@@ -36,7 +45,7 @@ a{
     font-weight: 700;
     text-align: center;
     padding: 0.8rem;
-    text-indent: 0.02rem;
+    letter-spacing: 0.02px;
     text-transform: uppercase;
 }
 
@@ -67,12 +76,17 @@ a{
 .icon{
     list-style: none;
 }
-
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
 .skills-title{
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 0.5rem 1rem 0.5rem;
+    padding: 1rem 0.5rem;
 }
 
 .skill-name{
@@ -89,7 +103,8 @@ a{
 }
 .right-section{
     background-color: white;
-    grid-column: span 1 / 3;
+    grid-column: span 1 / span 2;
+    min-height: 1000px;
 }
 
 .right-main-content{
@@ -124,14 +139,11 @@ a{
     text-align: left;
 }
 
-/* @media only screen and (max-width: 630px) {
+@media only screen and (max-width: 673px) {
     .main-content{
+        min-height: 1000px;
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
     }
-} */
-
-@media only screen and (max-width: 674px) {
-    .main-content{
-        grid-template-columns: repeat(1, 300px);
-    }
 }
+
